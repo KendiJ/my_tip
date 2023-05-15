@@ -12,16 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v2
-        with:
-          distribution: 'zulu'
-          java-version: '11'
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.7'
-      - run: flutter pub get
+    - uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'zulu'
+        java-version: '11'
+    - uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.7.7'
+    - run: flutter pub get
       # - run: flutter test
-      - run: flutter build apk
-      - run: flutter build appbundle
+    - run: flutter build apk
+    - run: flutter build appbundle
