@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -9,33 +8,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-//   var number = TextEditingController();
-//   // method to initiate the transaction
-//   Future<void>startCheckOut({
-//     String userPhone,
-//     String amount
-// })async{
-//     dynamic transactionInitialisation;
-//     try{
-//       transactionInitialisation = await MpesaFlutterPlugin.initializeMpesaSTKPush(
-//           businessShortCode: "174379",
-//           transactionType: TransactionType.CustomerPayBillOnline,
-//           amount: double.parse(amount),
-//           partyA: userPhone,
-//           partyB: "174379",
-//           callBackURL: Uri.parse("https://sandbox.safaricom.co.ke"),
-//           accountReference: "M-pesa Bill Splitter",
-//           phoneNumber: userPhone,
-//           transactionDesc: "Purchase",
-//           baseUri: Uri.parse("https://sandbox.safaricom.co.ke"),
-//           passKey: "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919");
-//       print("Transaction Result" + transactionInitialisation.toString());
-//       return transactionInitialisation;
-//     }
-//     catch(e) {
-//       print("Exception" + e.toString());
-//     }
-//   }
+
 
   double billAmount = 0;
   int tipPercentage = 0;
@@ -50,13 +23,7 @@ class _HomeState extends State<Home> {
   // Map function which is called in the database
   Map bills;
 
-  // addBills() {
-
-  //   Map<String, dynamic> demoBills = {"name" : "Super Splitter"};
-
-  //   CollectionReference collectionReference = Firestore.instance.collection('bills');
-  //   collectionReference.add(demoBills);
-  // }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -284,29 +251,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(height: 10),
-              // Container(
-              //     child: Padding(
-              //   padding: const EdgeInsets.all(8.0),
-              //   child: RaisedButton(
-              //       elevation: 5,
-              //       onPressed: () {
-              //         // startCheckOut(userPhone: "254799182010", amount: "1");
-              //       },
-              //       padding: EdgeInsets.all(15.0),
-              //       shape: RoundedRectangleBorder(
-              //         borderRadius: BorderRadius.circular(20.0),
-              //       ),
-              //       color: Colors.white,
-              //       child: Text(
-              //         'Pay with M-Pesa',
-              //         style: TextStyle(
-              //           color: Colors.teal,
-              //           letterSpacing: 1.5,
-              //           fontSize: 18.0,
-              //           fontWeight: FontWeight.bold,
-              //         ),
-              //       )),
-              // ),),
+              
             ],
           ),
         ),
