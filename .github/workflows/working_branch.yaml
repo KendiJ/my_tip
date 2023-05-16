@@ -2,15 +2,16 @@ name: my_tip
 
 on:
     push:
-        branches: ['develop']
-            
-jobs: 
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: My Tip
-              uses: ./.github/actions/my_tip
-              with:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        branches: [develop]
 
+jobs:
+    build:
+        runs-on: 
+            ubuntu-latest
+            ios-latest
+            windows-latest
+            macos-latest
+        steps:
+            - uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+            - uses: subosito/flutter-action@v2
+            
