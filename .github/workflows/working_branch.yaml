@@ -20,6 +20,6 @@ jobs:
                 java-version: '11'
             - run: flutter clean
             - run: flutter pub get
-            - run:     
+            - run: flutter build appbundle   
 
           
