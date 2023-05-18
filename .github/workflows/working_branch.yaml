@@ -18,8 +18,8 @@ jobs:
               with:
                 distribution: 'zulu'
                 java-version: '11'
-                
-
             - run: flutter clean
             - run: flutter pub get
-            - run: flutter build apk
+            - run: flutter build apk   
+
+          
