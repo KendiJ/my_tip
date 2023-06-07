@@ -186,16 +186,16 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-              SizedBox(height:10),
+              SizedBox(height:40),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "A tip a day motivates me", style: TextStyle(fontWeight: FontWeight.w600, color: Colors.teal, fontSize: 15),
+                  "Add your tip", style: TextStyle(fontWeight: FontWeight.w600, color: Colors.teal, fontSize: 15),
                 ),
               ),
               Container(
                 margin:
-                    const EdgeInsets.only(left: 10.0, right: 10.0, top: 40.0),
+                    const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
                 decoration: BoxDecoration(
                   color: Colors.grey.shade100,
                   borderRadius: BorderRadius.circular(12.5),
